@@ -1,0 +1,33 @@
+POST http://localhost:4500/project 
+Content-Type: application/json
+
+{
+    "project_name": "Build stadium",
+    "description": "build stuff",
+    "project_location":"Nyeri",
+    "startdate":"2023/7/25",
+    "enddate": "2025/7/25"
+}
+
+###
+GET http://localhost:4500/project 
+
+###
+
+GET http://localhost:4500/project/31b71c32-5e73-40c7-b61c-15913886a65a
+###
+PUT http://localhost:4500/project/cdc432e6-151c-413e-8893-ccbd1d4d995d
+Content-Type: application/json
+
+{
+    "project_name": "Build class",
+    "description": "build stuff",
+    "project_location":"Nyeri",
+    "startdate":"2023/7/25",
+    "enddate": "2025/7/25"
+}
+
+###
+
+
+DELETE  http://localhost:4500/project/cdc432e6-151c-413e-8893-ccbd1d4d995d
